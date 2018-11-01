@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- =======================================================
@@ -24,25 +24,32 @@
 <body>
   <!--Navigation bar-->
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Бюро<span> переводов</span></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#feature">О проекте</a></li>
-            <li><a href="#faculity-member">Команда</a></li>
-            <li><a href="#pricing">Цены</a></li>
-            <li><a href="#courses">Заказ</a></li>
-            <li class="btn-login"><a href="#" data-target="#login" data-toggle="modal">Войти</a></li>
-          </ul>
-        </div>
+      <a class="navbar-brand" href="index.html">Бюро<span> переводов</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faculity-member">Команда</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Цены</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">Заказ</a>
+          </li>
+          <li class="btn-login"><a href="#" data-target="#login" data-toggle="modal">Войти</a></li>
+        </ul>
+      </div>
       </div>
     </nav>
   </header>
@@ -103,73 +110,74 @@
   <div class="banner">
     <div class="bg-color">
       <div class="container">
-        <div class="row">
+
           <div class="banner-text text-center">
             <div class="text-border">
               <h2 class="text-dec">Рандомный текст</h2>
             </div>
             <div class="intro-para text-center quote">
-              <p class="big-text">Learning Today . . . Leading Tomorrow.</p>
+              <p class="big-text">Текст</p>
               <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
               <a href="#footer" class="btn get-quote">GET A QUOTE</a>
             </div>
-            <a href="#feature" class="mouse-hover">
+            <a href="#service" class="mouse-hover">
               <div class="mouse"></div>
             </a>
           </div>
         </div>
-      </div>
+
     </div>
   </div>
   <!--/ Banner-->
-  <!--Feature-->
-  <section id="feature" class="section-padding">
+  <!--service-->
+  <section id="service" class="section-padding">
     <div class="container">
-      <div class="row">
         <div class="header-section text-center">
-          <h2>Features</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <h2>Услуги</h2>
           <hr class="bottom-line">
         </div>
-        <div class="feature-info">
-          <div class="fea">
-            <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-4 cservice-info">
               <div class="heading pull-right">
-                <h4>Latest Technologies</h4>
-                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+                  <h4>Письменный перевод</h4>
+                  <li><a href="#">Перевод текста</a></li>
+                  <li><a href="#">Перевод документов</a></li>
+                  <li><a href="#">Медицинский перевод</a></li>
+                  <li><a href="#">Технический перевод</a></li>
+                  <li><a href="#">Финансовый перевод</a></li>
+                  <li><a href="#">Юридический перевод</a></li>
+                  <li><a href="#">Художественный перевод</a></li>
               </div>
-              <div class="fea-img pull-left">
-                <i class="fa fa-css3"></i>
-              </div>
-            </div>
           </div>
-          <div class="fea">
-            <div class="col-md-4">
-              <div class="heading pull-right">
-                <h4>Toons Background</h4>
-                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <h4>Устный перевод</h4>
+                  <li><a href="#">Последовательный перевод</a></li>
+                  <li><a href="#">Синхронный перевод</a></li>
+                  <li><a href="#">Перевод тел. разговоров</a></li>
+                  <li><a href="#">Трансфер</a></li>
+                  <li><a href="#">Сопровождение</a></li>
+                </div>
               </div>
-              <div class="fea-img pull-left">
-                <i class="fa fa-drupal"></i>
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <h4>Локализация
+                    <button type="button" class="btn btn-secondary btn-light" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="Локализация - перевод, адаптированный под определенную культуру. Не путать с простым переводом">
+                      ?
+                    </button>
+                  </h4>
+                  <li><a href="#">Перевод сайтов</a></li>
+                  <li><a href="#">Локализация сайтов</a></li>
+                  <li><a href="#">Локализация игр</a></li>
+                  <li><a href="#">Перевод мультимедиа</a></li>
+                  <li><a href="#">Локализация ПО</a></li>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="fea">
-            <div class="col-md-4">
-              <div class="heading pull-right">
-                <h4>Award Winning Design</h4>
-                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-              </div>
-              <div class="fea-img pull-left">
-                <i class="fa fa-trophy"></i>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
   </section>
-  <!--/ feature-->
+  <!--/ service-->
   <!--Organisations-->
   <section id="organisations" class="section-padding">
     <div class="container">
@@ -529,13 +537,31 @@
       </div>
     </div>
   </footer>
+  <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
   <!--/ Footer-->
-
-  <script src="js/jquery.min.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
   <script src="js/jquery.easing.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
+  <script src="js/main.js">
+
+  </script>
 
 </body>
 

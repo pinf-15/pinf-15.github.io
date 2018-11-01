@@ -61,9 +61,8 @@ Navigation bar
     font-weight: 700;
 }
 .navbar-nav > li > a{
-	padding: 0px;
-	margin: 10px 5px;
-	padding: 10px 15px;
+	margin: 0px 4px;
+  padding: 0px 9px;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
 {
@@ -80,7 +79,7 @@ Navigation bar
 	background-color: #5FCF80;
 	border-radius: 25px;
 	color: #ffffff !important;
-	border: 1px solid #5FCF80;
+	border: 5px solid #5FCF80;
 }
 .btn-login a:hover, .btn-login a:focus{
 	border: 1px solid #5FCF80;
@@ -237,12 +236,17 @@ Banner
   transition: all 0.3s ease-in-out;
 }
 /***********************************
-Features
+services
 ************************************/
 h2{
 	font-size: 24px;
 	padding-bottom: 15px;
 }
+
+#service h2{
+	padding-bottom: 0px;
+}
+
 .bottom-line{
 	width: 25px;
 	height: 3px;
@@ -257,6 +261,49 @@ h2{
 .heading {
     width: 80%;
 }
+
+#service .btn{
+	border: none;
+	background-color: white;
+	padding: 0;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
 .fea i {
     font-size: 39px;
     color: #5FCF80;
@@ -676,7 +723,7 @@ Responsive media queries
     .ser-text {
     font-size: 20px;
     }
-    .service-box, .feature-info, .orga-stru{
+    .service-box, .service-info, .orga-stru{
         margin-bottom: 30px;
     }
     .pricing-head .amount {
@@ -690,7 +737,7 @@ Responsive media queries
     .ser-text {
     font-size: 20px;
     }
-    .service-box, .feature-info{
+    .service-box, .service-info{
         margin-bottom: 30px;
     }
 
