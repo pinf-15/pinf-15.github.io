@@ -8,11 +8,12 @@
 
 body {
 	font-size: 15px;
-    line-height: 1.52;
-    color: #717f86;
-    font-size: 16px;
+  line-height: 1.52;
+  color: #717f86;
+  font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+  font-weight: 400;
+	position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -30,7 +31,9 @@ table {
 	border-spacing: 0;
 }
 .section-padding{
-	padding: 20px 0px;
+	padding: 58px 0px;
+	height: 100%;
+	overflow-y: scroll;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: Open Sans, sans-serif;
@@ -39,9 +42,15 @@ h1, h2, h3, h4, h5, h6{
 }
 a{
     color: #5fcf80;
+		text-decoration: none;
 }
 a:hover, a:focus{
-    color: #5fcf80;
+    color: #5FCF80 !important;
+		text-decoration: none;
+}
+
+.btn-login:hover{
+	color: #5FCF80 !important;
 }
 /***********************************
 Navigation bar
@@ -70,9 +79,8 @@ Navigation bar
 }
 
 .navbar-nav .active a{
-    background: none !important;
-    color: #5FCF80 !important;
     outline: none;
+		color: #5FCF80 !important;
 }
 
 .btn-login a{
@@ -82,9 +90,8 @@ Navigation bar
 	border: 5px solid #5FCF80;
 }
 .btn-login a:hover, .btn-login a:focus{
-	border: 1px solid #5FCF80;
-	background-color: #fff;
-	color: #5FCF80 ;
+	border: 5px solid #5FCF80;
+	color: #5FCF80;
 }
 .navbar-default .navbar-brand {
     font-family: 'Dosis', sans-serif ;
@@ -100,6 +107,7 @@ Navigation bar
 }
 .navbar {
     margin-bottom: 0px;
+		font-weight: 700;
 }
 .padding-zero{
 	padding: 0px;
@@ -108,10 +116,25 @@ Navigation bar
 	margin-top: 20px;
 }
 
+.modal-body{
+	padding: 18px;
+}
+
 .modal-title{
 	margin-bottom: -15px;
 	margin-left: 12px;
   line-height: 3;
+}
+
+.modal-content{
+  width: 102%;
+}
+
+.modal .btn{
+	background-color: #5fcf80;
+	color: #fff;
+	padding: 7px 20px;
+	margin-bottom: 0px;
 }
 
 button.close{
@@ -119,6 +142,10 @@ button.close{
 	background-color: transparent;
 	border: 0;
 	-webkit-appearance: none;
+}
+
+.dropdown-item{
+	 padding: .25rem 0.5rem;
 }
 /***********************************
 Banner
@@ -369,6 +396,11 @@ h2{
     margin-top: 35px;
     color: rgb(255, 255, 255);
 }
+
+.col-md-6{
+	display: inline-flex;
+}
+
 h3.det-txt {
     font-size: 40px;
     font-weight: bold;
