@@ -218,46 +218,67 @@
   </section>
   <!--/ Organisations-->
   <!--work-shop-->
-  <section id="work-shop" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="header-section text-center">
-          <h2>Upcoming Workshop</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-          <hr class="bottom-line">
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="service-box text-center">
-            <div class="icon-box">
-              <i class="fa fa-html5 color-green"></i>
-            </div>
-            <div class="icon-text">
-              <h4 class="ser-text">Mentor HTML5 Workshop</h4>
-            </div>
+  <section id="calculation" class="section-padding">
+    <div class="container text-center">
+   			<div class="headtitle"> Расчет стоимости перевода текстов </div>
+
+   			<div class="calc">
+   				<form action="" id="myForms" class="myForms" name="myForm">
+  					<div class="newdiv1 ops">
+
+  						<label for="options"> Язык оригинала: </label>
+  						<input type="hidden" id="firstchange" name="firstchange" value="Немецкий">
+  	 					<select id="options" onchange="chan();" name="options" class="custom-select custom-select-sm">
+  						  <option value="option1">Немецкий</option>
+  						  <option value="option2">Норвежский</option>
+  						  <option value="option3">Польский</option>
+  						</select>
+
+  						<label for="options2"> Язык перевода: </label>
+  						<input type="hidden" id="secondchange" name="secondchange" value="Немецкий">
+  						<select id="options2" onchange="chan();" name="options2" class=" custom-select custom-select-sm">
+  						  <option value="option1">Немецкий</option>
+  						  <option value="option2">Норвежский</option>
+  						  <option value="option3">Польский</option>
+  						</select>
+  					</div>
+
+  					<div class="newdiv2">
+  						<label for="options3"> Выберите вид услуги: </label>
+  							<input type="hidden" id="thirdchange" name="thirdchange" value="Художественный перевод">
+  						<select id="options3" onchange="chan();" name="options3" class="custom-select">
+  						  <option value="option31">Художественный перевод</option>
+  						  <option value="option32">Экономический перевод</option>
+  						  <option value="option33">Технический перевод</option>
+  						  <option value="option34">Медицинский перевод</option>
+  						  <option value="option35">Другой</option>
+  						</select>
+  					</div>
+
+  					<div class="newdiv3">
+  						<input type="submit" value="Узнать стоимость" id="tyle">
+          	</div>
+  				</form>
+
+  				<div id="modal_form" style="display: none; top: 45%; opacity: 0;"><!-- Сaмo oкнo -->
+          <span id="modal_close">x</span> <!-- Кнoпкa зaкрыть -->
+        <!-- Тут любoе сoдержимoе -->
+       				 <div class="remove">
+           			<form class="myForms black" action="">
+        					<label for="names">*Введите Ваше имя</label>
+        					<input type="text" id="names" name="name" required="" value="">
+
+        					<label for="phones">*Введите Ваш номер</label>
+        					<input type="text" onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')" id="phones" name="phonenumber" required="" value="">
+
+        					<input type="submit" value="Отправить" id="tyles">
+        					<div class="erors"> *Заполните все поля! </div>
+      				  </form>
+  				     </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="service-box text-center">
-            <div class="icon-box">
-              <i class="fa fa-css3 color-green"></i>
-            </div>
-            <div class="icon-text">
-              <h4 class="ser-text">Mentor CSS3 Workshop</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="service-box text-center">
-            <div class="icon-box">
-              <i class="fa fa-joomla color-green"></i>
-            </div>
-            <div class="icon-text">
-              <h4 class="ser-text">Mentor Joomla Workshop</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          <div id="overlay" style="display: none;"></div><!-- Пoдлoжкa -->
+   			</div>
+     </div>
   </section>
   <!--/ work-shop-->
   <!--Faculity member-->
