@@ -224,43 +224,47 @@
 
    			<div class="calc">
    				<form action="" id="myForms" class="myForms" name="myForm">
-  					<div class="newdiv1 ops">
+  					<div class="calculate ops">
+              <div class="calculate_content form-group">
+    						<label for="options"> Язык оригинала: </label>
+    	 					<select id="options" onchange="chan();" name="options" class="custom-select custom-select-sm">
+                  <option value="">Выберите язык</option>
+                  <option value="100">Немецкий</option>
+    						  <option value="150">Норвежский</option>
+    						  <option value="120">Польский</option>
+    						</select>
 
-  						<label for="options"> Язык оригинала: </label>
-  						<input type="hidden" id="firstchange" name="firstchange" value="Немецкий">
-  	 					<select id="options" onchange="chan();" name="options" class="custom-select custom-select-sm">
-  						  <option value="option1">Немецкий</option>
-  						  <option value="option2">Норвежский</option>
-  						  <option value="option3">Польский</option>
-  						</select>
+    						<label for="options2"> Язык перевода: </label>
+    						<select id="options2" onchange="chan();" name="options2" class=" custom-select custom-select-sm">
+                  <option value="">Выберите язык</option>
+                  <option value="100">Немецкий</option>
+    						  <option value="150">Норвежский</option>
+    						  <option value="120">Польский</option>
+    						</select>
 
-  						<label for="options2"> Язык перевода: </label>
-  						<input type="hidden" id="secondchange" name="secondchange" value="Немецкий">
-  						<select id="options2" onchange="chan();" name="options2" class=" custom-select custom-select-sm">
-  						  <option value="option1">Немецкий</option>
-  						  <option value="option2">Норвежский</option>
-  						  <option value="option3">Польский</option>
-  						</select>
-  					</div>
 
-  					<div class="newdiv2">
-  						<label for="options3"> Выберите вид услуги: </label>
-  							<input type="hidden" id="thirdchange" name="thirdchange" value="Художественный перевод">
-  						<select id="options3" onchange="chan();" name="options3" class="custom-select">
-  						  <option value="option31">Художественный перевод</option>
-  						  <option value="option32">Экономический перевод</option>
-  						  <option value="option33">Технический перевод</option>
-  						  <option value="option34">Медицинский перевод</option>
-  						  <option value="option35">Другой</option>
-  						</select>
-  					</div>
+    						<label for="options3"> Выберите вид услуги: </label>
+    						<select id="options3" onchange="chan();" name="options3" class="custom-select">
+                  <option value="">Выберите вид услуги</option>
+                  <option value="1.5">Художественный перевод</option>
+    						  <option value="1.1">Экономический перевод</option>
+    						  <option value="1.2">Технический перевод</option>
+    						  <option value="1.4">Медицинский перевод</option>
+    						  <option value="1">Публицистика</option>
+    						</select>
 
-  					<div class="newdiv3">
-  						<input type="submit" value="Узнать стоимость" id="tyle">
-          	</div>
-  				</form>
+                <label for="options4">Количество слов</label>
+                <input class="form-control w-50" type="number" min-value="500" value="500"></input>
 
-  				<div id="modal_form" style="display: none; top: 45%; opacity: 0;"><!-- Сaмo oкнo -->
+                <div class="text-center">
+                  <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results">Узнать стоимость</button>
+                </div>
+              </div>
+	        </div>
+      </div>
+				</form>
+
+  				<div id="modal_form" sresults="display: none; top: 45%; opacity: 0;"><!-- Сaмo oкнo -->
           <span id="modal_close">x</span> <!-- Кнoпкa зaкрыть -->
         <!-- Тут любoе сoдержимoе -->
        				 <div class="remove">
@@ -271,12 +275,12 @@
         					<label for="phones">*Введите Ваш номер</label>
         					<input type="text" onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')" id="phones" name="phonenumber" required="" value="">
 
-        					<input type="submit" value="Отправить" id="tyles">
+        					<input type="submit" value="Отправить" id="resultss">
         					<div class="erors"> *Заполните все поля! </div>
       				  </form>
   				     </div>
           </div>
-          <div id="overlay" style="display: none;"></div><!-- Пoдлoжкa -->
+          <div id="overlay" sresults="display: none;"></div><!-- Пoдлoжкa -->
    			</div>
      </div>
   </section>
