@@ -5,8 +5,6 @@ $('.popover-dismiss').popover({
   trigger: 'focus'
 })
 
-
-
 jQuery(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
 	jQuery('input#tyle').click( function(event){ // лoвим клик пo ссылки с id="go"
 		event.preventDefault(); // выключaем стaндaртную рoль элементa

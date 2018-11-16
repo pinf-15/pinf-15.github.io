@@ -141,7 +141,6 @@ button.close{
 	padding: 10px;
 	background-color: transparent;
 	border: 0;
-	-webkit-appearance: none;
 }
 
 .dropdown-item{
@@ -507,13 +506,17 @@ label {
 	font-family: 'Roboto';
 		font-weight: 500;
 		font-size: 16px;
-		font-sresults: normal;
 		display: block;
 		line-height: 19px;
 		margin-left: 30px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 }
+
+${
+	padding-bottom: 40px;
+}
+
 .black label{
 		color: black;
 		margin-left: 0;
@@ -583,6 +586,11 @@ input[type="submit"]
 
 .custom-select{
 	width: 50%;
+}
+
+.calculate_content{
+		background-color: RGBA(12, 11, 11, 0.82);
+    height: 450px;
 }
 
 /* .newdiv2{
