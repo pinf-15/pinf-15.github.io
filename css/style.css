@@ -417,6 +417,7 @@ p.det-p {
 }
 
 /* calculation */
+
 #modal_form {
 	width: 300px;
 	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
@@ -495,8 +496,7 @@ p.det-p {
     color: #007d25;
 }
 
-.third_select,
-.fourth_select{
+.third_select, .fourth_select{
 		width: 529px;
 }
 option{
@@ -591,6 +591,10 @@ input[type="submit"]
 .calculate_content{
 		background-color: RGBA(12, 11, 11, 0.82);
     height: 450px;
+}
+
+.calculate_content div.text-center{
+	margin-top: 17px;
 }
 
 /* .newdiv2{
@@ -1065,7 +1069,7 @@ Responsive media queries
     margin-bottom: 20px;
     }
     .orga-stru h3 {
-    font-size: 28px;
+    font-size: 24px;
     }
     .orga-stru p {
     font-size: 13px;
