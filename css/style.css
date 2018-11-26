@@ -475,7 +475,7 @@ p.det-p {
 		height: 400px;
 	} */
 	input {
-		 border-radius: 50px;
+		border-radius: 50px;
     width: 213px;
     outline: none;
     height: 39px;
@@ -542,21 +542,17 @@ ${
 }
 input[type="submit"]
 {
-    width: 214px;
+  width: 214px;
 	height: 49px;
-	background: #FFD700;
-	border-radius: 50px;
 	font-family: Roboto;
-	font-sresults: normal;
-	border: 0;
-	text-transform: none;
-	outline: none;
-	color: #54595F;
 	font-weight: 300;
 	cursor: pointer;
 	line-height: normal;
 	font-size: 16px;
 	text-align: center;
+	padding-bottom: 10px;
+  padding-top: 13px;
+
 }
 .erors{
 	color: black;
@@ -681,6 +677,7 @@ Cta
     border: 0px solid #CCC;
     padding: 13px 40px;
     font-size: 18px;
+		height: 47px;
     color: #2b5d83;
     font-weight: 100;
     min-width: 280px;
@@ -691,19 +688,19 @@ Cta
     border-radius: 30px 0px 0px 30px;
 }
 .cta-2-form-submit-btn {
-    font-size: 18px;
-    text-transform: capitalize;
-    color: #fff;
-    background-color: #5fcf80;
-    border: 2px solid #fff;
-    padding: 14px 30px;
-    margin-left: -4px;
-    transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    border-width: 1px 1px 1px 0px;
-    border-radius: 0px 30px 30px 0px;
+		font-size: 18px;
+		text-transform: capitalize;
+		color: #fff;
+		background-color: #5fcf80;
+		border: 2px solid #fff;
+		padding: 14px 30px;
+		margin-left: -2px;
+		transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		border-width: 1px 1px 1px 0px;
+		border-radius: 0px 30px 30px 0px;
 }
 /***********************************
 Work Shop

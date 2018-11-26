@@ -496,7 +496,7 @@
   <section id="contact" class="section-padding">
     <div class="container">
       <div class="row">
-        <div class="header-section text-center">
+        <div class="header-section cta-2-txt">
           <h2>Связаться с нами</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
           <hr class="bottom-line">
@@ -504,29 +504,27 @@
         <div id="sendmessage">Сообщение отправлено</div>
         <div id="errormessage"></div>
         <form action="" method="post" role="form" class="contactForm">
-          <div class="col-md-6 col-sm-6 col-xs-12 left">
-            <div class="form-group">
-              <input type="text" class="form-control form" name="name"  id="name" placeholder="Ваше имся" data-rule="minlen:4" data-msg="Введите хотя бы 4 символа" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Ваш E-mail" data-rule="email" data-msg="Введите верный e-mail" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема" data-rule="minlen:4" data-msg="Введите хотя бы 8 символов" />
-              <div class="validation"></div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12 right">
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Напишите любой бред" placeholder="Сообщение"></textarea>
-              <div class="validation"></div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 left">
+              <div class="form-group">
+                <input type="text" class="form-control form" name="name"  id="name" placeholder="Ваше имя" data-rule="minlen:4" data-msg="Введите хотя бы 4 символа" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Ваш E-mail" data-rule="email" data-msg="Введите верный e-mail" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема" data-rule="minlen:4" data-msg="Введите хотя бы 8 символов" />
+                <div class="validation"></div>
+              </div>
             </div>
           </div>
-
-          <div class="col-xs-12">
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Напишите любой бред" placeholder="Сообщение"></textarea>
+            <div class="validation"></div>
+          </div>
+          <div class="button-send">
             <!-- Button -->
             <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">Отправить</button>
           </div>
