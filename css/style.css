@@ -849,9 +849,9 @@ Contact Us
 .validation {
     color: red;
     display:none;
-    margin: 0 0 20px;
+    margin: -17px 0px;
     font-weight:400;
-    font-size:13px;
+    font-size:12px;
 }
 
 #sendmessage {
@@ -876,6 +876,19 @@ Contact Us
 
 #sendmessage.show, #errormessage.show, .show {
 	display:block;
+}
+
+.message, .credentials{
+	height: 151px;
+}
+
+.message textarea{
+	height: 145px;
+	margin-bottom: 0px;
+}
+
+.button-send{
+	height: 46px;
 }
 /***********************************
 Footer
@@ -1088,11 +1101,19 @@ Responsive media queries
     }
     .cta-2-form-submit-btn {
     font-size: 10px;
+		padding: 0px;
     }
+		.cta-2-form form{
+		display: flex;
+		}
+		.cta-2-form .email{
+
+		}
     .cta-2-form input[type="email"] {
     padding: 13px 10px;
     font-size: 10px;
     min-width: 187px;
+		height: 47px;
     }
     .modal-sm {
     width: 300px;
@@ -1106,4 +1127,10 @@ Responsive media queries
     .navbar-default .navbar-nav > li > a{
         text-align: center;
     }
+}
+
+@media (min-width: 320px){
+	.validation{
+		font-size: 9.7px;
+	}
 }
