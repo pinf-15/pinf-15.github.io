@@ -736,8 +736,8 @@ Mentor Team
 }
 
 .pm-staff-profile-image{
-  width: 150px;
-  height: 150px;
+  max-width: 70%;
+  height: auto;
   background-color: #C6C6C6;
   border-radius: 50%;
   display: inline-block;
