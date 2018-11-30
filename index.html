@@ -221,11 +221,12 @@
    			<div class="headtitle">Расчет стоимости перевода текстов </div>
 
    		<div class="calc">
-   				<form action="" id="myForms" class="myForms" name="myForm">
+   				<form action="" id="price-form" class="myForms" name="myForm">
   					<div class="calculate ops">
               <div class="calculate_content form-group">
+
     						<label for="lang_from" style="padding-top: 24px;"> Язык оригинала: </label>
-    	 					<select id="lang_from" onchange="chan();" name="options" class="custom-select custom-select-sm">
+    	 					<select id="lang_from" onchange="chan();" name="lang_from" class="custom-select custom-select-sm">
                   <option value="None">Выберите язык</option>
                   <option value="German">Немецкий</option>
     						  <option value="Norwegian">Норвежский</option>
@@ -233,7 +234,7 @@
     						</select>
 
     						<label for="lang_to"> Язык перевода: </label>
-    						<select id="lang_to" onchange="chan();" name="options2" class=" custom-select custom-select-sm">
+    						<select id="lang_to" onchange="chan();" name="lang_to" class=" custom-select custom-select-sm">
                   <option value="None">Выберите язык</option>
                   <option value="German" hidden>Немецкий</option>
     						  <option value="Norwegian">Норвежский</option>
@@ -241,8 +242,8 @@
     						</select>
 
 
-    						<label for="options3"> Выберите вид услуги: </label>
-    						<select id="options3" onchange="chan();" name="options3" class="custom-select custom-select-sm">
+    						<label for="service_type"> Выберите вид услуги: </label>
+    						<select id="service_type" onchange="chan();" name="service_type" class="custom-select custom-select-sm">
                   <option value="None">Выберите вид услуги</option>
                   <option value="1.5">Художественный перевод</option>
     						  <option value="1.1">Экономический перевод</option>
@@ -251,35 +252,20 @@
     						  <option value="1">Публицистика</option>
     						</select>
 
-                <label for="options4">Количество слов</label>
+                <label for="words_amount">Количество слов</label>
 
                 <input class="form-control-sm w-50" type="number" min-value="500" value="500"></input>
 
                 <div class="text-center">
-                  <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal()">Узнать стоимость</button>
+                  <input type="submit" id="submit" value="Submit" onclick="calculateTotal()">
+                  <!-- <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal()">Узнать стоимость</button> -->
                 </div>
+              <div id="totalPrice"></div>
               </div>
 	        </div>
       </div>
 				</form>
 
-  				<div id="modal_form" sresults="display: none; top: 45%; opacity: 0;"><!-- Сaмo oкнo -->
-          <span id="modal_close">x</span> <!-- Кнoпкa зaкрыть -->
-        <!-- Тут любoе сoдержимoе -->
-       				 <div class="remove">
-           			<form class="myForms black" action="">
-        					<label for="names">*Введите Ваше имя</label>
-        					<input type="text" id="names" name="name" required="" value="">
-
-        					<label for="phones">*Введите Ваш номер</label>
-        					<input type="text" onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')" id="phones" name="phonenumber" required="" value="">
-
-        					<input type="submit" value="Отправить" id="resultss">
-        					<div class="erors"> *Заполните все поля! </div>
-      				  </form>
-  				     </div>
-          </div>
-          <div id="overlay" sresults="display: none;"></div><!-- Пoдлoжкa -->
    			</div>
   </section>
   <!--/ work-shop-->

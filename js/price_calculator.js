@@ -14,11 +14,12 @@ lang_from["German"]=100
 lang_from["Norwegian"]=150
 lang_from["Polish"]=120
 
+
 function getLangFromPrice()
 {
     var langFromPrice=0;
-    //отсылаемся к форме id="myForms"
-    var theForm = document.forms["myForms"];
+    //отсылаемся к форме id="price-form"
+    var theForm = document.forms["price-form"];
     //Отсылаемся к выбиранному языку name=selectedCake":
     var selected_lang_from = theForm.elements["lang_from"];
     //Here since there are 4 radio buttons selectedCake.length = 4
@@ -31,10 +32,10 @@ function getLangFromPrice()
 function getLangToPrice()
 {
     var langToPrice=0;
-    //отсылаемся к форме id="myForms"
-    var theForm = document.forms["myForms"];
+    //отсылаемся к форме id="price-form"
+    var theForm = document.forms["price-form"];
     //Отсылаемся к выбиранному языку id="filling"
-    var selected_lang_to = theForm.elements["filling"];
+    var selected_lang_to = theForm.elements["lang_to"];
 
     //set cakeFilling Price equal to value user chose
     //For example lang_to["Lemon".value] would be equal to 5
@@ -55,4 +56,10 @@ function calculateTotal()
     divobj.style.display='block';
     divobj.innerHTML = "Total Price $"+result_price;
 
+}
+
+function hideTotal()
+{
+    var divobj = document.getElementById('totalPrice');
+    divobj.style.display='none';
 }
