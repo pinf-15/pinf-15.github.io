@@ -224,20 +224,20 @@
    				<form action="" id="myForms" class="myForms" name="myForm">
   					<div class="calculate ops">
               <div class="calculate_content form-group">
-    						<label for="options" style="padding-top: 24px;"> Язык оригинала: </label>
-    	 					<select id="options" onchange="chan();" name="options" class="custom-select custom-select-sm">
+    						<label for="lang_from" style="padding-top: 24px;"> Язык оригинала: </label>
+    	 					<select id="lang_from" onchange="chan();" name="options" class="custom-select custom-select-sm">
                   <option value="None">Выберите язык</option>
-                  <option value="100">Немецкий</option>
-    						  <option value="150">Норвежский</option>
-    						  <option value="120">Польский</option>
+                  <option value="German">Немецкий</option>
+    						  <option value="Norwegian">Норвежский</option>
+    						  <option value="Polish">Польский</option>
     						</select>
 
-    						<label for="options2"> Язык перевода: </label>
-    						<select id="options2" onchange="chan();" name="options2" class=" custom-select custom-select-sm">
+    						<label for="lang_to"> Язык перевода: </label>
+    						<select id="lang_to" onchange="chan();" name="options2" class=" custom-select custom-select-sm">
                   <option value="None">Выберите язык</option>
-                  <option value="100" hidden>Немецкий</option>
-    						  <option value="150">Норвежский</option>
-    						  <option value="120">Польский</option>
+                  <option value="German" hidden>Немецкий</option>
+    						  <option value="Norwegian">Норвежский</option>
+    						  <option value="Polish">Польский</option>
     						</select>
 
 
@@ -256,7 +256,7 @@
                 <input class="form-control-sm w-50" type="number" min-value="500" value="500"></input>
 
                 <div class="text-center">
-                  <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results">Узнать стоимость</button>
+                  <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal()">Узнать стоимость</button>
                 </div>
               </div>
 	        </div>
