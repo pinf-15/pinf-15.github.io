@@ -731,6 +731,10 @@ Mentor Team
 	background: rgb(247, 247, 247);
 }
 
+.team{
+
+}
+
 .pm-staff-profile-image{
   width: 150px;
   height: 150px;
@@ -1111,7 +1115,7 @@ Responsive media queries
 		}
     .cta-2-form input[type="email"] {
     padding: 13px 10px;
-    font-size: 10px;
+    font-size: 13px;
     min-width: 187px;
 		height: 47px;
     }
