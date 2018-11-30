@@ -731,8 +731,8 @@ Mentor Team
 	background: rgb(247, 247, 247);
 }
 
-.team{
-
+.img-thumbnail{
+	border-radius: 50%
 }
 
 .pm-staff-profile-image{
