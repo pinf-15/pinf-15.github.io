@@ -18,43 +18,47 @@ lang_from["Polish"]=120
 function getLangFromPrice()
 {
     var langFromPrice=0;
-    //отсылаемся к форме id="price-form"
-    var theForm = document.forms["price-form"];
-    //Отсылаемся к выбиранному языку name=selectedCake":
-    var selected_lang_from = theForm.elements["lang_from"];
-    //Here since there are 4 radio buttons selectedCake.length = 4
-    //We loop through each radio buttons
-    langToPrice = lang_to[selected_lang_to.value];
-    //Возвращаем langFromPrice
+    //Get a reference to the form id="langform"
+    var theForm = document.forms["langform"];
+    //Get a reference to the cake the user Chooses name=selectedlangFrom":
+    var selectedlangFrom = theForm.elements["selectedlangFrom"];
+
+    langFromPrice = lang_from[selectedlangFrom.value];
+
+    //We return the langFromPrice
     return langFromPrice;
 }
 
+//This function finds the filling price based on the
+//drop down selection
 function getLangToPrice()
 {
     var langToPrice=0;
-    //отсылаемся к форме id="price-form"
-    var theForm = document.forms["price-form"];
-    //Отсылаемся к выбиранному языку id="filling"
-    var selected_lang_to = theForm.elements["lang_to"];
+    //Get a reference to the form id="langform"
+    var theForm = document.forms["langform"];
+    //Get a reference to the select id=selectedLangTo
+     var selectedFilling = theForm.elements["selectedLangTo"];
 
     //set cakeFilling Price equal to value user chose
     //For example lang_to["Lemon".value] would be equal to 5
-    langToPrice = lang_to[selected_lang_to.value];
+    langToPrice = lang_to[selectedLangTo.value];
 
     //finally we return langToPrice
     return langToPrice;
 }
 
+//candlesPrice() finds the candles price based on a check box selection
+
 function calculateTotal()
 {
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
-    var result_price = getLangFromPrice() + getLangToPrice();
+    var sumPrice = getLangFromPrice() + getLangToPrice();
 
     //display the result
     var divobj = document.getElementById('totalPrice');
     divobj.style.display='block';
-    divobj.innerHTML = "Total Price $"+result_price;
+    divobj.innerHTML = "Total Price For the Cake $"+sumPrice;
 
 }
 
