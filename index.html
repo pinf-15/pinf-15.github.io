@@ -40,7 +40,7 @@
             <a class="nav-link" href="#our-team">Команда</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pricing">Цены</a>
+            <a class="nav-link" href="#plans">Цены</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#courses">Заказ</a>
@@ -219,54 +219,50 @@
   <section id="calculation" class="section-padding">
     <div class="container text-center">
    			<div class="headtitle">Расчет стоимости перевода текстов </div>
+       				<form action id="langform" onsubmit="return false;">
+      					<div class="calculate ops">
+                  <div class="calculate_content form-group">
 
-   		<div class="calc">
-   				<form action="" id="price-form" class="myForms" name="myForm">
-  					<div class="calculate ops">
-              <div class="calculate_content form-group">
+        						<label for="selectedlangFrom" style="padding-top: 24px;"> Язык оригинала: </label>
+                      <select id="selectedlangFrom" name="selectedlangFrom" onchange="calculateTotal()"  class="custom-select custom-select-sm">
+                      <option value="None">Выберите язык</option>
+                      <option value="German">Немецкий</option>
+        						  <option value="Norwegian">Норвежский</option>
+        						  <option value="Polish">Польский</option>
+        						</select>
 
-    						<label for="lang_from" style="padding-top: 24px;"> Язык оригинала: </label>
-    	 					<select id="lang_from" onchange="chan();" name="lang_from" class="custom-select custom-select-sm">
-                  <option value="None">Выберите язык</option>
-                  <option value="German">Немецкий</option>
-    						  <option value="Norwegian">Норвежский</option>
-    						  <option value="Polish">Польский</option>
-    						</select>
-
-    						<label for="lang_to"> Язык перевода: </label>
-    						<select id="lang_to" onchange="chan();" name="lang_to" class=" custom-select custom-select-sm">
-                  <option value="None">Выберите язык</option>
-                  <option value="German" hidden>Немецкий</option>
-    						  <option value="Norwegian">Норвежский</option>
-    						  <option value="Polish">Польский</option>
-    						</select>
+        						<label for="selectedlangTo"> Язык перевода: </label>
+        						<select id="selectedlangTo" onchange="calculateTotal();" name="selectedlangTo" class="custom-select custom-select-sm">
+                      <option value="None">Выберите язык</option>
+                      <option value="German" hidden>Немецкий</option>
+        						  <option value="Norwegian">Норвежский</option>
+        						  <option value="Polish">Польский</option>
+        						</select>
 
 
-    						<label for="service_type"> Выберите вид услуги: </label>
-    						<select id="service_type" onchange="chan();" name="service_type" class="custom-select custom-select-sm">
-                  <option value="None">Выберите вид услуги</option>
-                  <option value="1.5">Художественный перевод</option>
-    						  <option value="1.1">Экономический перевод</option>
-    						  <option value="1.2">Технический перевод</option>
-    						  <option value="1.4">Медицинский перевод</option>
-    						  <option value="1">Публицистика</option>
-    						</select>
+        						<!-- <label for="service_type"> Выберите вид услуги: </label>
+        						<select id="service_type" onchange="chan();" name="service_type" class="custom-select custom-select-sm">
+                      <option value="None">Выберите вид услуги</option>
+                      <option value="1.5">Художественный перевод</option>
+        						  <option value="1.1">Экономический перевод</option>
+        						  <option value="1.2">Технический перевод</option>
+        						  <option value="1.4">Медицинский перевод</option>
+        						  <option value="1">Публицистика</option>
+        						</select>
 
-                <label for="words_amount">Количество слов</label>
+                    <label for="words_amount">Количество слов</label>
+                    <input class="form-control-sm w-50" type="number" min-value="500" value="500"></input>
 
-                <input class="form-control-sm w-50" type="number" min-value="500" value="500"></input>
+                    <div class="text-center">
+                      <input type="submit" id="submit" value="Submit" onclick="calculateTotal()"> -->
 
-                <div class="text-center">
-                  <input type="submit" id="submit" value="Submit" onclick="calculateTotal()">
-                  <!-- <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal()">Узнать стоимость</button> -->
-                </div>
-              <div id="totalPrice"></div>
-              </div>
-	        </div>
-      </div>
-				</form>
-
-   			</div>
+                      <!-- <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal()">Узнать стоимость</button> -->
+                    </div>
+                  <div id="totalPrice" style="display: none;"></div>
+                  </div>
+    	        </div>
+            </form>
+	 	</div>
   </section>
   <!--/ work-shop-->
   <!--Faculity member-->
@@ -418,8 +414,8 @@
     </div>
   </section>
   <!--/ Courses-->
-  <!--Pricing-->
-  <section id="pricing" class="section-padding">
+  <!--plans-->
+  <section id="plans" class="section-padding">
     <div class="container">
       <div class="row">
         <div class="header-section cta-2-txt">
@@ -430,7 +426,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="price-table">
             <!-- Plan  -->
-            <div class="pricing-head">
+            <div class="plans-head">
               <h4>План №1</h4>
               <span class="fa fa-shekel curency"></span> <span class="amount">200</span>
             </div>
@@ -444,7 +440,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="price-table">
             <!-- Plan  -->
-            <div class="pricing-head">
+            <div class="plans-head">
               <h4>План №2</h4>
               <span class="fa fa-shekel curency"></span> <span class="amount">800</span>
             </div>
@@ -458,7 +454,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="price-table">
             <!-- Plan  -->
-            <div class="pricing-head">
+            <div class="plans-head">
               <h4>План №3</h4>
               <span class="fa fa-shekel curency"></span> <span class="amount">1200</span>
             </div>
@@ -472,7 +468,7 @@
       </div>
     </div>
   </section>
-  <!--/ Pricing-->
+  <!--/ plans-->
   <!--Cta-->
   <section id="cta-2">
     <div class="container">
