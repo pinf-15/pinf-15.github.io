@@ -412,7 +412,7 @@ h4.sm-txt {
 p.det-p {
     padding: 40px 0px;
 }
-#pricing{
+#plans{
     background: rgb(247, 247, 247);
 }
 
@@ -497,6 +497,14 @@ ${
 	font-size: 16px;
 	text-align: center;
 }
+
+#wrap div#totalPrice
+{
+    padding:10px;
+    font-weight:bold;
+    background-color:#ff0;
+}
+
 input[type="submit"]
 {
   width: 214px;
@@ -741,12 +749,12 @@ Price Table
     box-shadow: 0px 0px 1px 0px RGBA(0, 0, 0, 0.4);
     position: relative;
 }
-.price-table .pricing-head {
+.price-table .plans-head {
     background: #fff;
     padding: 40px;
     text-align: center;
 }
-.price-table .pricing-head h4 {
+.price-table .plans-head h4 {
     font-size: 22px;
     color: #232c3b;
     margin-top: 0px;
@@ -754,11 +762,11 @@ Price Table
     border-bottom: 1px solid #232c3b;
     padding-bottom: 20px;
 }
-.pricing-head .amount {
+.plans-head .amount {
     font-size: 60px;
     font-weight: bold;
 }
-.pricing-head .curency {
+.plans-head .curency {
     display: inline-block;
     position: relative;
     top: -30px;
@@ -966,16 +974,17 @@ Footer
 .light-form-button{
     background: #5fcf80;
     border: 1px solid rgba(119, 81, 81, 0.34);
+		border-radius: 30px;
+		cursor: pointer;
     width: 24%;
     padding: 10px 10px;
     margin-bottom: 15px;
     color: #fff;: #fafafa;
-    border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
     margin-bottom: 15px;
-     -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
 }
 .btn-green, .btn-green:hover{
     background-color: #5fcf80;
@@ -996,10 +1005,10 @@ Responsive media queries
     .service-box, .service-info, .orga-stru{
         margin-bottom: 30px;
     }
-    .pricing-head .amount {
+    .plans-head .amount {
     font-size: 51px;
     }
-    .price-table .pricing-head h4 {
+    .price-table .plans-head h4 {
     font-size: 18px;
     }
 }
@@ -1011,10 +1020,10 @@ Responsive media queries
         margin-bottom: 30px;
     }
 
-    .pricing-head .amount {
+    .plans-head .amount {
     font-size: 51px;
     }
-    .price-table .pricing-head h4 {
+    .price-table .plans-head h4 {
     font-size: 18px;
     }
 }
