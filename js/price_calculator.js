@@ -18,52 +18,47 @@ lang_from["Polish"]=120
 function getLangFromPrice()
 {
     var langFromPrice=0;
-    //Get a reference to the form id="langform"
+    //Ссылаемся на форму
     var theForm = document.forms["langform"];
-    //Get a reference to the cake the user Chooses name=selectedlangFrom":
+    //Ссылаемся на язык, с которого переводим:
     var selectedlangFrom = theForm.elements["selectedlangFrom"];
 
     langFromPrice = lang_from[selectedlangFrom.value];
 
-    //We return the langFromPrice
+    //Возвращаем цену
     return langFromPrice;
 }
 
-//This function finds the filling price based on the
-//drop down selection
 function getLangToPrice()
 {
     var langToPrice=0;
-    //Get a reference to the form id="langform"
+    //Ссылаемся на форму
     var theForm = document.forms["langform"];
-    //Get a reference to the select id=selectedLangTo
+    //Ссылаемся на язык, на который переводим:
      var selectedFilling = theForm.elements["selectedLangTo"];
-
-    //set cakeFilling Price equal to value user chose
-    //For example lang_to["Lemon".value] would be equal to 5
+    //Ставим значение как цену
+    //Наприемер, немецкий - 150
     langToPrice = lang_to[selectedLangTo.value];
 
-    //finally we return langToPrice
+    //Возвращаем цену
     return langToPrice;
 }
 
-//candlesPrice() finds the candles price based on a check box selection
 
 function calculateTotal()
 {
-    //Here we get the total price by calling our function
-    //Each function returns a number so by calling them we add the values they return together
+    //Считаем сумму
     var sumPrice = getLangFromPrice() + getLangToPrice();
 
-    //display the result
-    var divobj = document.getElementById('totalPrice');
-    divobj.style.display='block';
-    divobj.innerHTML = "Total Price For the Cake $"+sumPrice;
+    //Отображаем результат
+    var div_result = document.getElementById('totalPrice');
+    div_result.style.display='block';
+    div_result.innerHTML = "Total Price For the Cake $"+sumPrice;
 
 }
 
 function hideTotal()
 {
-    var divobj = document.getElementById('totalPrice');
-    divobj.style.display='none';
+    var div_result = document.getElementById('totalPrice');
+    div_result.style.display='none';
 }
