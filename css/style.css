@@ -558,12 +558,13 @@ input[type="submit"]
 	margin-top: 17px;
 }
 
-#wrap div#totalPrice
+div#totalPrice
 {
     padding:10px;
     font-weight:bold;
-    background-color:#ff0;
+    color: white;
 }
+
 
 /* .newdiv2{
     margin-top: 50px; margin-left: 4%; width: 50%; float: left;
