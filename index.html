@@ -223,16 +223,16 @@
       					<div class="calculate ops">
                   <div class="calculate_content form-group">
 
-        						<label for="selectedlangFrom" style="padding-top: 24px;"> Язык оригинала: </label>
-                      <select id="selectedlangFrom" name="selectedlangFrom" onchange="calculateTotal()"  class="custom-select custom-select-sm">
+        						<label for="selected_lang_From" style="padding-top: 24px;"> Язык оригинала: </label>
+                      <select name="selected_lang_From" onchange="calculateTotal()"  class="custom-select custom-select-sm">
                       <option value="None">Выберите язык</option>
                       <option value="German">Немецкий</option>
         						  <option value="Norwegian">Норвежский</option>
         						  <option value="Polish">Польский</option>
         						</select>
 
-        						<label for="selectedlangTo"> Язык перевода: </label>
-        						<select id="selectedlangTo" onchange="calculateTotal();" name="selectedlangTo" class="custom-select custom-select-sm">
+        						<label for="selected_lang_To"> Язык перевода: </label>
+        						<select id="selected_lang_To" onchange="calculateTotal()" class="custom-select custom-select-sm">
                       <option value="None">Выберите язык</option>
                       <option value="German" hidden>Немецкий</option>
         						  <option value="Norwegian">Норвежский</option>
@@ -257,8 +257,9 @@
                       <input type="submit" id="submit" value="Submit" onclick="calculateTotal()"> -->
 
                       <!-- <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal()">Узнать стоимость</button> -->
+                      <div id="totalPrice" style="display: none;"></div>
                     </div>
-                  <div id="totalPrice" style="display: none;"></div>
+
                   </div>
     	        </div>
             </form>
