@@ -229,6 +229,8 @@
                       <option value="German">Немецкий</option>
         						  <option value="Norwegian">Норвежский</option>
         						  <option value="Polish">Польский</option>
+                      <option value="Russian">Русский</option>
+                      <option value="English">Английский</option>
         						</select>
 
         						<label for="selected_lang_To"> Язык перевода: </label>
@@ -237,25 +239,26 @@
                       <option value="German" hidden>Немецкий</option>
         						  <option value="Norwegian">Норвежский</option>
         						  <option value="Polish">Польский</option>
+                      <option value="Russian">Русский</option>
+                      <option value="English">Английский</option>
         						</select>
 
 
-        						<!-- <label for="service_type"> Выберите вид услуги: </label>
-        						<select id="service_type" onchange="chan();" name="service_type" class="custom-select custom-select-sm">
+        						<label for="service_type"> Выберите вид услуги: </label>
+        						<select id="service_type" onchange="calculateTotal();" class="custom-select custom-select-sm">
                       <option value="None">Выберите вид услуги</option>
-                      <option value="1.5">Художественный перевод</option>
-        						  <option value="1.1">Экономический перевод</option>
-        						  <option value="1.2">Технический перевод</option>
-        						  <option value="1.4">Медицинский перевод</option>
-        						  <option value="1">Публицистика</option>
+                      <option value="Fictional">Художественный перевод</option>
+        						  <option value="Economical">Экономический перевод</option>
+        						  <option value="Technical">Технический перевод</option>
+        						  <option value="Medicine">Медицинский перевод</option>
+        						  <option value="Publicistic">Публицистика</option>
         						</select>
 
                     <label for="words_amount">Количество слов</label>
                     <input class="form-control-sm w-50" type="number" min-value="500" value="500"></input>
 
                     <div class="text-center">
-                      <input type="submit" id="submit" value="Submit" onclick="calculateTotal()"> -->
-
+                      <!-- <input type="submit" id="submit" value="Submit" onclick="calculateTotal()"> -->
                       <!-- <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal()">Узнать стоимость</button> -->
                       <div id="totalPrice" style="display: none;"></div>
                     </div>
