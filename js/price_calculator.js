@@ -23,6 +23,8 @@ service_type_prices["Technical"]=1.2;
 service_type_prices["Medicine"]=1.4;
 service_type_prices["Publicistic"]=1;
 
+var words_amount[""]=0.1
+
 // Берем данные из формы
 var theForm = document.forms["langform"];
 
@@ -52,7 +54,7 @@ function getServiceTypePrice(){
 }
 
 function getWordsAmount(){
-    var words_amount = document.getElementById("words").value || 0;
+    var words_amount = document.getElementById("words").value;
     return words_amount;
 }
 
