@@ -51,14 +51,19 @@ function getServiceTypePrice(){
     return serviceTypePrice;
 }
 
+function getWordsAmount(){
+    var words_amount = document.getElementById("words").value || 0;
+    return words_amount;
+}
 
 // Общий подсчет
 function calculateTotal()
 {
-   var sumPrice = (getLangFromPrice() + getLangToPrice()) * getServiceTypePrice();
+   var sumPrice = getLangFromPrice() + getLangToPrice() + getServiceTypePrice() + getWordsAmount();
+   sumPrice = parseFloat(sumPrice).toFixed(2);
    var result_price = document.getElementById('totalPrice');
    result_price.style.display='block';
-   result_price.innerHTML = "Total Price $"+sumPrice;
+   result_price.innerHTML = "Стоимость: " + sumPrice + " ₽";
 }
 
 // спрятать результат
