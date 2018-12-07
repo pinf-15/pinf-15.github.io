@@ -25,7 +25,7 @@ service_type_prices["Medicine"]=1.4
 service_type_prices["Publicistic"]=1
 
 var words = new Array();
-document.getElementById("words").value=words*0.2;
+document.getElementById("words").value || 0
 
 var theForm = document.forms["langform"];
 
@@ -53,9 +53,6 @@ function getServiceTypePrice(){
     return serviceTypePrice;
 }
 
-function getWordsAmount(){
-    var words
-}
 
 // Общий подсчет
 function calculateTotal()
