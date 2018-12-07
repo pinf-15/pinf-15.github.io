@@ -25,7 +25,7 @@ service_type_prices["Medicine"]=1.4
 service_type_prices["Publicistic"]=1
 
 var words = new Array();
-words = 0;
+document.getElementById("words").value=words*0.2;
 
 var theForm = document.forms["langform"];
 
