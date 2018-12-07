@@ -24,13 +24,15 @@ service_type_prices["Technical"]=1.2
 service_type_prices["Medicine"]=1.4
 service_type_prices["Publicistic"]=1
 
+var words = new Array();
+words = 0;
+
 var theForm = document.forms["langform"];
-// Общий подсчет
+
 
 function getLangFromPrice()
 {
    var langFromPrice=0;
-
    var selectedLangFrom = theForm.elements["selected_lang_From"];
    langFromPrice = lang_from_prices[selectedLangFrom.value];
    return langFromPrice;
@@ -51,13 +53,17 @@ function getServiceTypePrice(){
     return serviceTypePrice;
 }
 
+function getWordsAmount(){
+    var words
+}
+
+// Общий подсчет
 function calculateTotal()
 {
-   var sumPrice = getLangFromPrice() + getLangToPrice();
+   var sumPrice = (getLangFromPrice() + getLangToPrice()) * getServiceTypePrice();
    var result_price = document.getElementById('totalPrice');
    result_price.style.display='block';
-   result_price.innerHTML = "Total Price $"+sumPrice * getServiceTypePrice();
-
+   result_price.innerHTML = "Total Price $"+sumPrice;
 }
 
 function hideTotal()
