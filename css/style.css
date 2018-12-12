@@ -226,8 +226,7 @@ Banner
     top:10px;
     margin-left: -2.5px;
     transition:all 0.3s ease-in;
-
-     -webkit-animation-name: rotateplane; /* Chrome, Safari, Opera */
+    -webkit-animation-name: rotateplane; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
     animation-name: rotateplane;
     animation-duration: 2s;
@@ -983,10 +982,25 @@ Responsive media queries
     .navbar-default .navbar-nav > li > a{
         text-align: center;
     }
+		.mouse{
+	    bottom: 4px;
+		}
 }
 
 @media (min-width: 320px){
 	.validation{
 		font-size: 9.7px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+	.mouse{
+    bottom: 15px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 425px) {
+	.mouse{
+		bottom: 42px;
 	}
 }
