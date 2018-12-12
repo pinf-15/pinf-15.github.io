@@ -302,8 +302,12 @@ h2{
 
 #service .btn{
 	border: none;
-	background-color: white;
-	padding: 0;
+	background-color: #5fcf8082;
+	padding: 0 9px;
+}
+
+#service .notice{
+	margin: 0 7px;
 }
 
 .popup {
@@ -554,6 +558,10 @@ input[type="submit"]
 
 .calculate_content div.text-center{
 	margin-top: 17px;
+}
+
+.calculate_content label{
+	color: #5fcf80;
 }
 
 div#totalPrice
