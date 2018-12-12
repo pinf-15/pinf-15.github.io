@@ -17,11 +17,16 @@ lang_to_prices["English"]=55;
 
 var service_type_prices = new Array();
 service_type_prices["None"]=0;
+service_type_prices["Text"]=0.5
 service_type_prices["Fictional"]=1.5;
 service_type_prices["Economical"]=1.1;
 service_type_prices["Technical"]=1.2;
 service_type_prices["Medicine"]=1.4;
 service_type_prices["Publicistic"]=1;
+service_type_prices["Website"]=1.3
+service_type_prices["Videogame"]=1.6
+service_type_prices["Software"]=1.6
+service_type_prices["Media"]=1.2
 
 var words_amount[""]=0.1
 
