@@ -905,6 +905,12 @@ Responsive media queries
     .price-table .plans-head h4 {
     font-size: 18px;
     }
+		.btn-login a{
+			color: #5fcf80!important;
+			padding: 0px 0px!important;
+			border: none;
+			background-color: #f8f9fa;
+		}
 }
 @media (min-width: 20px) and (max-width: 450px) {
     .text-dec {
@@ -984,6 +990,12 @@ Responsive media queries
     }
 		.mouse{
 	    bottom: 4px;
+		}
+		.btn-login a{
+			color: #5fcf80!important;
+			padding: 0px 0px!important;
+			border: none;
+			background-color: #f8f9fa;
 		}
 }
 
