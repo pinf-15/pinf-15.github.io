@@ -146,6 +146,27 @@ button.close{
 .dropdown-item{
 	 padding: .25rem 0.5rem;
 }
+
+.checkbox-inline{
+		font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    line-height: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+		margin-left: 0px;
+}
+
+#loginrem{
+	border-radius: 50px;
+	width: 24px;
+	outline: none;
+	height: 13px;
+	padding-left: 0px;
+	margin-bottom: 15px;
+	color: black;
+}
 /***********************************
 Banner
 ************************************/
