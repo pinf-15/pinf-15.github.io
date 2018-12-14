@@ -66,7 +66,7 @@ function getWordsAmount(){
 // Общий подсчет
 function calculateTotal()
 {
-   var sumPrice = getLangFromPrice() + getLangToPrice() + getServiceTypePrice() + getWordsAmount();
+   var sumPrice = getLangFromPrice() + getLangToPrice() + getServiceTypePrice();
    sumPrice = parseFloat(sumPrice).toFixed(2);
    var result_price = document.getElementById('totalPrice');
    result_price.style.display='block';
