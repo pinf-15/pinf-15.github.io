@@ -59,7 +59,13 @@ function calculateTotal()
    var result_price = document.getElementById('totalPrice');
    result_price.style.display='block';
    result_price.innerHTML = "Total Price: "+sumPrice+" ₽";
+   if (sumPrice === 0) {
+     result_price.style.display='block';
+     result_price.innerHTML = "Заполните все формы";
+   }
 }
+
+
 
 // спрятать результат
 function hideTotal()
