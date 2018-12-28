@@ -195,61 +195,55 @@
   </section>
   <section id="calculation" class="section-padding">
     <div class="container text-center">
-   			<div class="headtitle">Расчет стоимости перевода текстов </div>
-       				<form action id="langform" onsubmit="return false;">
-      					<div class="calculate ops">
+        <div class="headtitle">Расчет стоимости перевода текстов </div>
+              <form action id="langform" onsubmit="return false;">
+                <div class="calculate ops">
                   <div class="calculate_content form-group">
 
-        						<label for="selected_lang_From" style="padding-top: 24px;">Язык оригинала:</label>
+                    <label for="selected_lang_From" style="padding-top: 24px;">Язык оригинала:</label>
                       <select name="selected_lang_From" onchange="" class="custom-select custom-select-sm">
                       <option value="None">Выберите язык</option>
                       <option value="German">Немецкий</option>
-        						  <option value="Norwegian">Норвежский</option>
-        						  <option value="Polish">Польский</option>
+                      <option value="Norwegian">Норвежский</option>
+                      <option value="Polish">Польский</option>
                       <option value="Russian">Русский</option>
                       <option value="English">Английский</option>
-        						</select>
+                    </select>
 
-        						<label for="selected_lang_To">Язык перевода:</label>
-        						<select id="selected_lang_To" onchange="" class="custom-select custom-select-sm">
+                    <label for="selected_lang_To">Язык перевода:</label>
+                    <select id="selected_lang_To" onchange="" class="custom-select custom-select-sm">
                       <option value="None">Выберите язык</option>
                       <option value="German" hidden>Немецкий</option>
-        						  <option value="Norwegian">Норвежский</option>
-        						  <option value="Polish">Польский</option>
+                      <option value="Norwegian">Норвежский</option>
+                      <option value="Polish">Польский</option>
                       <option value="Russian">Русский</option>
                       <option value="English">Английский</option>
-        						</select>
+                    </select>
 
-        						<label for="service_type">Выберите вид услуги:</label>
-        						<select id="service_type" onchange="" class="custom-select custom-select-sm">
+
+                    <label for="service_type">Выберите вид услуги:</label>
+                    <select id="service_type" onchange="" class="custom-select custom-select-sm">
                       <option value="None">Выберите вид услуги</option>
-                      <option value="Text">Обычный текст</option>
-                      <option value="Document">Перевод документов</option>
                       <option value="Fictional">Художественный перевод</option>
-        						  <option value="Economical">Финансовый перевод</option>
-        						  <option value="Technical">Технический перевод</option>
-        						  <option value="Medicine">Медицинский перевод</option>
-        						  <option value="Publicistic">Публицистика</option>
-                      <option value="Website">Локализация сайта</option>
-                      <option value="Videogame">Локализация видеоигр</option>
-                      <option value="Software">Локализация ПО</option>
-                      <option value="Media">Локализация мультимедиа</option>
-        						</select>
+                      <option value="Economical">Экономический перевод</option>
+                      <option value="Technical">Технический перевод</option>
+                      <option value="Medicine">Медицинский перевод</option>
+                      <option value="Publicistic">Публицистика</option>
+                    </select>
 
                     <label for="words">Количество слов</label>
                     <input type="number" id="words" value="" class="form-control-sm w-50" ></input>
 
                     <div class="text-center">
-                      <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal()">Узнать стоимость</button>
+                      <button class="btn btn-primary btn-sm" type="submit" value="Узнать стоимость" id="results" onclick="calculateTotal();">Узнать стоимость</button>
                       <div id="totalPrice" style="display: none;"></div>
                     </div>
 
                   </div>
-    	        </div>
+              </div>
             </form>
-	 	</div>
-  </section>
-  <section id="our-team" class="section-padding">
+    </div>
+  </section>  <section id="our-team" class="section-padding">
     <div class="container">
       <div class="row">
         <div class="header-section cta-2-txt">

@@ -58,7 +58,7 @@ function calculateTotal()
    var sumPrice = (getLangFromPrice() + getLangToPrice()) * getServiceTypePrice();
    var result_price = document.getElementById('totalPrice');
    result_price.style.display='block';
-   result_price.innerHTML = "Total Price $"+sumPrice;
+   result_price.innerHTML = "Total Price: "+sumPrice+" ₽";
 }
 
 // спрятать результат
